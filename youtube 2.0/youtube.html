@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="youtubeStyles/video.css">
      <link rel="stylesheet" href="youtubeStyles/general.css">
       <link rel="stylesheet" href="youtubeStyles/header.css">
+        <link rel="stylesheet" href="youtubeStyles/sidebar.css">
     </head>
-    <body>
+    <body style="height: 2000px;">
      <div class="header">
          
           <div class="left-sec">
@@ -21,12 +22,26 @@
 
            <div class="middle-sec">
                 <input class="search-bar" type="text" placeholder="Search">
-                <button class="search-button"><img src="icons/search.svg"></button>
-                <button class="voice-button"><img src="icons/voice-search-icon.svg"></button>
+                <button class="search-button"><img class="search-icon" src="icons/search.svg"></button>
+                <button class="voice-button"><img class="voice-icon" src="icons/voice-search-icon.svg"></button>
           </div>
           
-           <div class="right-sec">right sec</div>
+           <div class="right-sec">
+              <img class="upload-icon" src="icons/upload.svg">
+              <img class="apps-icon" src="icons/youtube-apps.svg">
+              <img class="notify-icon" src="icons/notifications.svg">
+              <img class="channel-icon" src="icons/my-channel.jpeg">
+           </div>
          
+     </div>
+
+     <div class="sidebar">
+        <img class="home-icon" src="icons/home.svg">
+        <img class="explore-icon" src="icons/explore.svg">
+        <img class="subscription" src="icons/subscriptions.svg">
+        <img class="original" src="icons/originals.svg">
+        <img class="music" src="icons/youtube-music.svg">
+        <img class="lib-icon" src="icons/library.svg">
      </div>
          
        <div class="video-grid">
@@ -34,6 +49,7 @@
 
         <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnail-1.webp">
+            <div class="video-time">14:20</div>
         </div>
 
        <div class="video-info-grid">
