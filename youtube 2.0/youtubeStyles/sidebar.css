@@ -8,27 +8,29 @@
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: rgb(231, 227, 227);
+    z-index: 200;
+    padding-top: 5px;
 }
 
-.home-icon{
-    height:20px
-}
-.explore-icon{
-    height:20px
-}
-
-.subscription{
-    height:20px
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.original{
-    height:20px
+.sidebar-link:hover{
+    background-color: rgb(240, 238, 238);
 }
 
-.music{
-    height:20px
+.sidebar-link img{
+    height: 24px;
 }
 
-.lib-icon{
-    height:20px
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    margin-top: 4px;
 }
