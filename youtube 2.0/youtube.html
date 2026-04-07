@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="youtubeStyles/sidebar.css">
     </head>
     <body style="height: 2000px;">
-     <div class="header">
+     <header class="header">
          
           <div class="left-sec">
                <img class="hamburger-menu" src="icons/hamburger-menu.svg" >
@@ -22,23 +22,36 @@
 
            <div class="middle-sec">
                 <input class="search-bar" type="text" placeholder="Search">
-                <button class="search-button"><img class="search-icon" src="icons/search.svg"></button>
-                <button class="voice-button"><img class="voice-icon" src="icons/voice-search-icon.svg"></button>
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+               </button>
+                <button class="voice-button">
+                    <img class="voice-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+               </button>
           </div>
           
            <div class="right-sec">
-              <img class="upload-icon" src="icons/upload.svg">
-              <img class="apps-icon" src="icons/youtube-apps.svg">
+               <div class="upload-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+               </div>
+               <div class="apps-container">
+                    <img class="apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">YouTube apps</div>
+               </div>
               <div class="notify-container">
                    <img class="notify-icon" src="icons/notifications.svg">
                    <div class="notify-count">3</div>
+                   <div class="tooltip">Notifications</div>
               </div>
               <img class="channel-icon" src="icons/my-channel.jpeg">
            </div>
          
-     </div>
+     </header>
 
-     <div class="sidebar">
+     <nav class="sidebar">
           <div class="sidebar-link">
                <img src="icons/home.svg">
                <div>Home</div>
@@ -63,9 +76,9 @@
                <img src="icons/library.svg">
                <div>Library</div>
           </div>
-     </div>
+     </nav>
          
-       <div class="video-grid">
+     <main><div class="video-grid">
         <div class="video-preview">
 
         <div class="thumbnail-row">
@@ -227,7 +240,8 @@
             </div>
        </div>
     </div>
-       </div>
+       </div></main>
+       
        
 
     </body>
